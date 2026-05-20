@@ -2,6 +2,16 @@
 
 # FdF — Fil de Fer
 
+## Screenshots
+
+*Westeros from Game of Thrones rendered as an isometric wireframe*
+![Westeros map — isometric view](https://github.com/user-attachments/assets/91772b6c-3bf0-44f7-97be-232fe4e848b5)
+
+*The Starry Night by Van Gogh rendered as a colored wireframe*
+![The Starry Night — colored wireframe](https://github.com/user-attachments/assets/1b67f33a-4f60-463d-8ff9-a003c0e2085f)
+
+---
+
 ## Description
 
 FdF (from the French *Fil de Fer*, meaning "wireframe") is a 3D wireframe terrain renderer written in C. The goal is to read a heightmap file describing a grid of altitude values and render it as an interactive isometric wireframe projection in a graphical window.
@@ -29,15 +39,16 @@ The program is built on top of [MiniLibX](https://github.com/42Paris/minilibx-li
 
 The following libraries must be present on your system:
 
-- `gcc` or `cc`
+- `gcc`
 - `make`
-- X11 development headers (`libx11-dev`, `libxext-dev` on Debian/Ubuntu)
-- `zlib` (`zlib1g-dev`)
+- X11 include files (`xorg`)
+- XShm extension (`libxext-dev`)
+- BSD utility functions (`libbsd-dev`)
 
 Install them on Debian/Ubuntu with:
 
 ```bash
-sudo apt install gcc make libx11-dev libxext-dev zlib1g-dev
+sudo apt-get install gcc make xorg libxext-dev libbsd-dev
 ```
 
 ### Compilation

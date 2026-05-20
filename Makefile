@@ -38,7 +38,7 @@ DEPS := 	$(OBJS:.o=.d)
 
 
 CC := cc
-CFLAGS := -Wall -Werror -Wextra -MMD -MP -Iinclude -Ilibft/include -Iprintf/include -Imlx_linux -g
+CFLAGS := -Wall -Werror -Wextra -std=gnu11 -MMD -MP -Iinclude -Ilibft/include -Iprintf/include -Imlx_linux -g
 
 all: create_dirs $(NAME)
 
